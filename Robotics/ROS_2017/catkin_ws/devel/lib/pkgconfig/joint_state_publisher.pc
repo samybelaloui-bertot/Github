@@ -1,0 +1,8 @@
+prefix=/home/samy/catkin_ws/devel
+
+Name: joint_state_publisher
+Description: Description of joint_state_publisher
+Version: 1.12.12
+Cflags: 
+Libs: -L/home/samy/catkin_ws/devel/lib 
+Requires: 

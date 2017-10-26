@@ -1,0 +1,4 @@
+vhdl work "register_1b_R.vhd"
+vhdl work "counterSen_4b_RE.vhd"
+vhdl work "counterDec_4b_RE.vhd"
+vhdl work "chronometer.vhd"

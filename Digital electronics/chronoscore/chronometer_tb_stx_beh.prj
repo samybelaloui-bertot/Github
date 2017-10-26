@@ -1,0 +1,5 @@
+vhdl isim_temp "register_1b_R.vhd"
+vhdl isim_temp "counterSen_4b_RE.vhd"
+vhdl isim_temp "counterDec_4b_RE.vhd"
+vhdl isim_temp "chronometer.vhd"
+vhdl isim_temp "chronometer_tb.vhd"

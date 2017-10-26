@@ -1,0 +1,8 @@
+* Observez les deux libraries et l'executable.
+* Compilez les fonctions de lib_fonction_1 et générez en une librairie dynamique du nom de libma_librairie.so
+* Compilez de même les fonctions de lib_fonction_2, et générez une librairie dynamique du même nom.
+* Copiez le fichier ma_librairie.h dans le repertoire executables/
+* Copiez la librairie (fichier .so) de lib_fonction_1/ dans le repertoire executables/
+* Compilez mon_programme.c et générez un executable.
+* Lancez le programme, observez qu'il s'agit bien de la fonction de lib_fonction_1/ qui est appelée.
+* Copiez maintenant le fichier .so de lib_fonction_2/ dans ce repertoire en ecrasant la précédent fichier. Relancez le programme, observez que le comportement de votre programme a été modifié dynamiquement sans avoir à modifier votre executable.

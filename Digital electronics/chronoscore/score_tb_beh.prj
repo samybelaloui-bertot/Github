@@ -1,0 +1,5 @@
+vhdl work "register_1b_E.vhd"
+vhdl work "register_1b.vhd"
+vhdl work "counterDec_4b_RE.vhd"
+vhdl work "score.vhd"
+vhdl work "score_tb.vhd"

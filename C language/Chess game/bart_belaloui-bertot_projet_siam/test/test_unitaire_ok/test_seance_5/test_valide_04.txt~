@@ -1,0 +1,4 @@
+lit ../test/test_unitaire_ok/test_seance_5/test_valide_04_entree.txt
+
+d 0 3 > >
+fin

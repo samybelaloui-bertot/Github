@@ -1,0 +1,2 @@
+xst -intstyle ise -ifn "C:/Users/samyb/Documents/CPE/Electronique/Projet1/chronoscore/freqgen_4b_E.xst" -ofn "C:/Users/samyb/Documents/CPE/Electronique/Projet1/chronoscore/freqgen_4b_E.syr" 
+xst -intstyle ise -ifn "C:/Users/samyb/Documents/CPE/Electronique/Projet1/chronoscore/freqgen_4b_E.xst" -ofn "C:/Users/samyb/Documents/CPE/Electronique/Projet1/chronoscore/freqgen_4b_E.syr" 

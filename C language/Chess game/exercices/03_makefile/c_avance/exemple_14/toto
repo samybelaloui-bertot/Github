@@ -1,0 +1,8 @@
+#Makefile sous un autre nom
+
+fichier.txt:
+	echo "Bonjour, je suis fichier.txt" > fichier.txt
+
+#Question:
+# Lancez make en ligne de commande. Que ce passe t-il?
+# Lancez "make -f toto" en ligne de commande. Concluez sur le rôle de l'option "-f"

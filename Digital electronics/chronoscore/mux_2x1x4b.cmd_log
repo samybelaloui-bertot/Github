@@ -1,0 +1,1 @@
+xst -intstyle ise -ifn "C:/Users/samyb/Documents/CPE/Electronique/Projet1/chronoscore/mux_2x1x4b.xst" -ofn "C:/Users/samyb/Documents/CPE/Electronique/Projet1/chronoscore/mux_2x1x4b.syr" 

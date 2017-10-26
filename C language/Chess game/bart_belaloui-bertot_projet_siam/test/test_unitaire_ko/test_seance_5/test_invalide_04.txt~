@@ -1,0 +1,6 @@
+lit ../test/test_unitaire_ko/test_seance_5/test_invalide_04_entree.txt
+
+d 3 3 v v
+fin
+
+# Test une poussee avec changement d'orientation de la piece

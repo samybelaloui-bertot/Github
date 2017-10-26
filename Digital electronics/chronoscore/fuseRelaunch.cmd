@@ -1,0 +1,1 @@
+-intstyle "ise" -incremental -o "C:/Users/samyb/Documents/CPE/Electronique/Projet1/chronoscore/score_tb_isim_beh.exe" -prj "C:/Users/samyb/Documents/CPE/Electronique/Projet1/chronoscore/score_tb_beh.prj" "work.score_tb" 

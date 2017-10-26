@@ -1,0 +1,29 @@
+Makefile complet avec installeur.
+
+Voici un exemple de makefile plus complet réalisant diverses actions.
+1- L'appel à make, viens compiler les différent fichiers sources, génère une librairie dynamique et viens lier celle-ci à l'executable.
+Lancez
+$ make
+et observez où sont générés les nouveaux fichiers. Retrouvez quelles lignes du Makefile sont mises en jeux.
+
+2- L'appel à "make clean", viens supprimer l'ensemble des fichiers générés. Lancez cette commande et observez la remise en etat du repertoire d'origine.
+
+3- L'appel à "make install" viens simuler un processus d'installation standard sous un système linux. 
+Les fichiers objets sont placés dans un repertoire temporaire, généralement ils sont supprimés.
+Les fichiers binaires sont placés dans local/bin
+Les fichiers d'en tête, dans local/include
+Les fichiers de librairie, dans local/lib
+Dans le cas d'une véritable installation sur la machine, le repertoire local serait placé en /usr/local/
+L'installation génère également un script de lancement du programme avec mise-à-jour du chemin de recherche des librairie dynamique.
+
+Lancez:
+$ make install
+Observez les repertoires ainsi créés.
+Lancez 
+$ ./runme.sh
+Observez que le programme se lance correctement.
+Que contient le script runme.sh ? 
+
+Enfin, l'appel à "make clean" permet de revenir à l'état initial en supprimant tous les fichiers binaires.
+
+

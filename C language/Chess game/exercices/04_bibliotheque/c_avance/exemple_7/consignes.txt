@@ -1,0 +1,19 @@
+Realisation d'un Makefile et de librairies
+
+Ce programme permet de vérifier si un nombre est premier ou non. La librairie de detection de primalitée est fournie en tant que version de debug (avec affichage intermediaire), et une version dite de "release" finale qui n'affiche rien.
+Les deux versions sont dans des repertoires distincts.
+
+Ecrivez le Makefile réalisant les actions suivantes:
+
+* compile la librairie de debug et de release et genère une librairie dynamique. Chaque repertoire contiendra so propre fichier libest_premier.so (sans distinction de nom).
+* compile mon_programme.c et génère un executable lié avec l'une ou l'autre des librairies.
+
+Note: L'utilisation de la fonction sqrt de math.h peut nécessiter la librairie libm. Ajoutez l'option -lm lors de l'édition de liens.
+
+Une fois l'executable réalisé, ajoutez le repertoire courant au LD_LIBRARY_PATH.
+Copiez la librairie du repertoire lib_debug/ dans le repertoire courant, et lancez l'executable.
+Copiez ensuite par dessus, l'autre librairie du repertoire lib_release/ dans le repertoire courant. Lancez à nouveau l'executable. Ne recompilez pas votre executable.
+
+Concluez sur l'utilité d'avoir plusieurs versions de librairie dynamique.
+
+

@@ -1,0 +1,413 @@
+Release 14.6 - xst P.68d (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+--> Parameter TMPDIR set to xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.10 secs
+ 
+--> Parameter xsthdpdir set to xst
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.10 secs
+ 
+--> Reading design: chronometer.prj
+
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Compilation
+  3) Design Hierarchy Analysis
+  4) HDL Analysis
+  5) HDL Synthesis
+     5.1) HDL Synthesis Report
+  6) Advanced HDL Synthesis
+     6.1) Advanced HDL Synthesis Report
+  7) Low Level Synthesis
+  8) Partition Report
+  9) Final Report
+	9.1) Device utilization summary
+	9.2) Partition Resource Summary
+	9.3) TIMING REPORT
+
+
+=========================================================================
+*                      Synthesis Options Summary                        *
+=========================================================================
+---- Source Parameters
+Input File Name                    : "chronometer.prj"
+Input Format                       : mixed
+Ignore Synthesis Constraint File   : NO
+
+---- Target Parameters
+Output File Name                   : "chronometer"
+Output Format                      : NGC
+Target Device                      : xc3s200-4-ft256
+
+---- Source Options
+Top Module Name                    : chronometer
+Automatic FSM Extraction           : YES
+FSM Encoding Algorithm             : Auto
+Safe Implementation                : No
+FSM Style                          : LUT
+RAM Extraction                     : Yes
+RAM Style                          : Auto
+ROM Extraction                     : Yes
+Mux Style                          : Auto
+Decoder Extraction                 : YES
+Priority Encoder Extraction        : Yes
+Shift Register Extraction          : YES
+Logical Shifter Extraction         : YES
+XOR Collapsing                     : YES
+ROM Style                          : Auto
+Mux Extraction                     : Yes
+Resource Sharing                   : YES
+Asynchronous To Synchronous        : NO
+Multiplier Style                   : Auto
+Automatic Register Balancing       : No
+
+---- Target Options
+Add IO Buffers                     : YES
+Global Maximum Fanout              : 500
+Add Generic Clock Buffer(BUFG)     : 8
+Register Duplication               : YES
+Slice Packing                      : YES
+Optimize Instantiated Primitives   : NO
+Use Clock Enable                   : Yes
+Use Synchronous Set                : Yes
+Use Synchronous Reset              : Yes
+Pack IO Registers into IOBs        : Auto
+Equivalent register Removal        : YES
+
+---- General Options
+Optimization Goal                  : Speed
+Optimization Effort                : 1
+Keep Hierarchy                     : No
+Netlist Hierarchy                  : As_Optimized
+RTL Output                         : Yes
+Global Optimization                : AllClockNets
+Read Cores                         : YES
+Write Timing Constraints           : NO
+Cross Clock Analysis               : NO
+Hierarchy Separator                : /
+Bus Delimiter                      : <>
+Case Specifier                     : Maintain
+Slice Utilization Ratio            : 100
+BRAM Utilization Ratio             : 100
+Verilog 2001                       : YES
+Auto BRAM Packing                  : NO
+Slice Utilization Ratio Delta      : 5
+
+=========================================================================
+
+
+=========================================================================
+*                          HDL Compilation                              *
+=========================================================================
+Compiling vhdl file "C:/CPE_users/TP_ELN2/Groupe D/BELALOUI-CHAVRET/Projet1/chronoscore/register_1b_R.vhd" in Library work.
+Architecture behavioral of Entity register_1b_r is up to date.
+Compiling vhdl file "C:/CPE_users/TP_ELN2/Groupe D/BELALOUI-CHAVRET/Projet1/chronoscore/counterDec_4b_RE.vhd" in Library work.
+Entity <counterdec_4b_re> compiled.
+Entity <counterdec_4b_re> (Architecture <behavioral>) compiled.
+Compiling vhdl file "C:/CPE_users/TP_ELN2/Groupe D/BELALOUI-CHAVRET/Projet1/chronoscore/counterSen_4b_RE.vhd" in Library work.
+Entity <countersen_4b_re> compiled.
+Entity <countersen_4b_re> (Architecture <behavioral>) compiled.
+Compiling vhdl file "C:/CPE_users/TP_ELN2/Groupe D/BELALOUI-CHAVRET/Projet1/chronoscore/chronometer.vhd" in Library work.
+Entity <chronometer> compiled.
+Entity <chronometer> (Architecture <behavioral>) compiled.
+
+=========================================================================
+*                     Design Hierarchy Analysis                         *
+=========================================================================
+Analyzing hierarchy for entity <chronometer> in library <work> (architecture <behavioral>).
+
+Analyzing hierarchy for entity <register_1b_R> in library <work> (architecture <behavioral>).
+
+Analyzing hierarchy for entity <counterDec_4b_RE> in library <work> (architecture <behavioral>).
+
+Analyzing hierarchy for entity <counterSen_4b_RE> in library <work> (architecture <behavioral>).
+
+
+=========================================================================
+*                            HDL Analysis                               *
+=========================================================================
+Analyzing Entity <chronometer> in library <work> (Architecture <behavioral>).
+WARNING:Xst:753 - "C:/CPE_users/TP_ELN2/Groupe D/BELALOUI-CHAVRET/Projet1/chronoscore/chronometer.vhd" line 135: Unconnected output port 'TC' of component 'counterSen_4b_RE'.
+Entity <chronometer> analyzed. Unit <chronometer> generated.
+
+Analyzing Entity <register_1b_R> in library <work> (Architecture <behavioral>).
+Entity <register_1b_R> analyzed. Unit <register_1b_R> generated.
+
+Analyzing Entity <counterDec_4b_RE> in library <work> (Architecture <behavioral>).
+WARNING:Xst:819 - "C:/CPE_users/TP_ELN2/Groupe D/BELALOUI-CHAVRET/Projet1/chronoscore/counterDec_4b_RE.vhd" line 49: One or more signals are missing in the process sensitivity list. To enable synthesis of FPGA/CPLD hardware, XST will assume that all necessary signals are present in the sensitivity list. Please note that the result of the synthesis may differ from the initial design specification. The missing signals are:
+   <Q_int>
+Entity <counterDec_4b_RE> analyzed. Unit <counterDec_4b_RE> generated.
+
+Analyzing Entity <counterSen_4b_RE> in library <work> (Architecture <behavioral>).
+WARNING:Xst:819 - "C:/CPE_users/TP_ELN2/Groupe D/BELALOUI-CHAVRET/Projet1/chronoscore/counterSen_4b_RE.vhd" line 49: One or more signals are missing in the process sensitivity list. To enable synthesis of FPGA/CPLD hardware, XST will assume that all necessary signals are present in the sensitivity list. Please note that the result of the synthesis may differ from the initial design specification. The missing signals are:
+   <Q_int>
+Entity <counterSen_4b_RE> analyzed. Unit <counterSen_4b_RE> generated.
+
+
+=========================================================================
+*                           HDL Synthesis                               *
+=========================================================================
+
+Performing bidirectional port resolution...
+
+Synthesizing Unit <register_1b_R>.
+    Related source file is "C:/CPE_users/TP_ELN2/Groupe D/BELALOUI-CHAVRET/Projet1/chronoscore/register_1b_R.vhd".
+    Found 1-bit register for signal <Q_int>.
+    Summary:
+	inferred   1 D-type flip-flop(s).
+Unit <register_1b_R> synthesized.
+
+
+Synthesizing Unit <counterDec_4b_RE>.
+    Related source file is "C:/CPE_users/TP_ELN2/Groupe D/BELALOUI-CHAVRET/Projet1/chronoscore/counterDec_4b_RE.vhd".
+    Found 4-bit up counter for signal <Q_int>.
+    Summary:
+	inferred   1 Counter(s).
+Unit <counterDec_4b_RE> synthesized.
+
+
+Synthesizing Unit <counterSen_4b_RE>.
+    Related source file is "C:/CPE_users/TP_ELN2/Groupe D/BELALOUI-CHAVRET/Projet1/chronoscore/counterSen_4b_RE.vhd".
+    Found 4-bit up counter for signal <Q_int>.
+    Summary:
+	inferred   1 Counter(s).
+Unit <counterSen_4b_RE> synthesized.
+
+
+Synthesizing Unit <chronometer>.
+    Related source file is "C:/CPE_users/TP_ELN2/Groupe D/BELALOUI-CHAVRET/Projet1/chronoscore/chronometer.vhd".
+Unit <chronometer> synthesized.
+
+
+=========================================================================
+HDL Synthesis Report
+
+Macro Statistics
+# Counters                                             : 4
+ 4-bit up counter                                      : 4
+# Registers                                            : 1
+ 1-bit register                                        : 1
+
+=========================================================================
+
+=========================================================================
+*                       Advanced HDL Synthesis                          *
+=========================================================================
+
+
+=========================================================================
+Advanced HDL Synthesis Report
+
+Macro Statistics
+# Counters                                             : 4
+ 4-bit up counter                                      : 4
+# Registers                                            : 1
+ Flip-Flops                                            : 1
+
+=========================================================================
+
+=========================================================================
+*                         Low Level Synthesis                           *
+=========================================================================
+
+Optimizing unit <chronometer> ...
+
+Mapping all equations...
+Building and optimizing final netlist ...
+Found area constraint ratio of 100 (+ 5) on block chronometer, actual ratio is 0.
+
+Final Macro Processing ...
+
+=========================================================================
+Final Register Report
+
+Macro Statistics
+# Registers                                            : 17
+ Flip-Flops                                            : 17
+
+=========================================================================
+
+=========================================================================
+*                           Partition Report                            *
+=========================================================================
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+=========================================================================
+*                            Final Report                               *
+=========================================================================
+Final Results
+RTL Top Level Output File Name     : chronometer.ngr
+Top Level Output File Name         : chronometer
+Output Format                      : NGC
+Optimization Goal                  : Speed
+Keep Hierarchy                     : No
+
+Design Statistics
+# IOs                              : 21
+
+Cell Usage :
+# BELS                             : 28
+#      INV                         : 4
+#      LUT2                        : 4
+#      LUT3                        : 2
+#      LUT4                        : 16
+#      LUT4_D                      : 1
+#      LUT4_L                      : 1
+# FlipFlops/Latches                : 17
+#      FDCE                        : 16
+#      FDRS                        : 1
+# Clock Buffers                    : 1
+#      BUFGP                       : 1
+# IO Buffers                       : 20
+#      IBUF                        : 4
+#      OBUF                        : 16
+=========================================================================
+
+Device utilization summary:
+---------------------------
+
+Selected Device : 3s200ft256-4 
+
+ Number of Slices:                       13  out of   1920     0%  
+ Number of Slice Flip Flops:             17  out of   3840     0%  
+ Number of 4 input LUTs:                 28  out of   3840     0%  
+ Number of IOs:                          21
+ Number of bonded IOBs:                  21  out of    173    12%  
+ Number of GCLKs:                         1  out of      8    12%  
+
+---------------------------
+Partition Resource Summary:
+---------------------------
+
+  No Partitions were found in this design.
+
+---------------------------
+
+
+=========================================================================
+TIMING REPORT
+
+NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
+      FOR ACCURATE TIMING INFORMATION PLEASE REFER TO THE TRACE REPORT
+      GENERATED AFTER PLACE-and-ROUTE.
+
+Clock Information:
+------------------
+-----------------------------------+------------------------+-------+
+Clock Signal                       | Clock buffer(FF name)  | Load  |
+-----------------------------------+------------------------+-------+
+CLK                                | BUFGP                  | 17    |
+-----------------------------------+------------------------+-------+
+
+Asynchronous Control Signals Information:
+----------------------------------------
+-----------------------------------+------------------------+-------+
+Control Signal                     | Buffer(FF name)        | Load  |
+-----------------------------------+------------------------+-------+
+RESET                              | IBUF                   | 16    |
+-----------------------------------+------------------------+-------+
+
+Timing Summary:
+---------------
+Speed Grade: -4
+
+   Minimum period: 7.177ns (Maximum Frequency: 139.334MHz)
+   Minimum input arrival time before clock: 9.069ns
+   Maximum output required time after clock: 7.430ns
+   Maximum combinational path delay: No path found
+
+Timing Detail:
+--------------
+All values displayed in nanoseconds (ns)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'CLK'
+  Clock period: 7.177ns (frequency: 139.334MHz)
+  Total number of paths / destination ports: 291 / 33
+-------------------------------------------------------------------------
+Delay:               7.177ns (Levels of Logic = 3)
+  Source:            U3_counterDec_4b_RE/Q_int_2 (FF)
+  Destination:       U5_counterDec_4b_RE/Q_int_0 (FF)
+  Source Clock:      CLK rising
+  Destination Clock: CLK rising
+
+  Data Path: U3_counterDec_4b_RE/Q_int_2 to U5_counterDec_4b_RE/Q_int_0
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDCE:C->Q             5   0.720   1.260  U3_counterDec_4b_RE/Q_int_2 (U3_counterDec_4b_RE/Q_int_2)
+     LUT2:I0->O            1   0.551   0.996  U3_counterDec_4b_RE/TC_int_and0000_SW0 (N5)
+     LUT4:I1->O            6   0.551   1.029  U3_counterDec_4b_RE/TC_int_and0000 (CE_secDec)
+     LUT4:I3->O            4   0.551   0.917  U4_counterSen_4b_RE/TC_int_and0000 (CE_minUni)
+     FDCE:CE                   0.602          U5_counterDec_4b_RE/Q_int_0
+    ----------------------------------------
+    Total                      7.177ns (2.975ns logic, 4.202ns route)
+                                       (41.5% logic, 58.5% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'CLK'
+  Total number of paths / destination ports: 34 / 18
+-------------------------------------------------------------------------
+Offset:              9.069ns (Levels of Logic = 5)
+  Source:            CE_1s (PAD)
+  Destination:       U5_counterDec_4b_RE/Q_int_0 (FF)
+  Destination Clock: CLK rising
+
+  Data Path: CE_1s to U5_counterDec_4b_RE/Q_int_0
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O             1   0.821   1.140  CE_1s_IBUF (CE_1s_IBUF)
+     LUT2:I0->O            2   0.551   1.216  CE_time45min31_SW0 (N9)
+     LUT4:I0->O            1   0.551   1.140  CE_time45min33_SW0 (N111)
+     LUT4:I0->O            6   0.551   1.029  U3_counterDec_4b_RE/TC_int_and0000 (CE_secDec)
+     LUT4:I3->O            4   0.551   0.917  U4_counterSen_4b_RE/TC_int_and0000 (CE_minUni)
+     FDCE:CE                   0.602          U5_counterDec_4b_RE/Q_int_0
+    ----------------------------------------
+    Total                      9.069ns (3.627ns logic, 5.442ns route)
+                                       (40.0% logic, 60.0% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'CLK'
+  Total number of paths / destination ports: 16 / 16
+-------------------------------------------------------------------------
+Offset:              7.430ns (Levels of Logic = 1)
+  Source:            U5_counterDec_4b_RE/Q_int_0 (FF)
+  Destination:       min_unit<0> (PAD)
+  Source Clock:      CLK rising
+
+  Data Path: U5_counterDec_4b_RE/Q_int_0 to min_unit<0>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDCE:C->Q             7   0.720   1.066  U5_counterDec_4b_RE/Q_int_0 (U5_counterDec_4b_RE/Q_int_0)
+     OBUF:I->O                 5.644          min_unit_0_OBUF (min_unit<0>)
+    ----------------------------------------
+    Total                      7.430ns (6.364ns logic, 1.066ns route)
+                                       (85.7% logic, 14.3% route)
+
+=========================================================================
+
+
+Total REAL time to Xst completion: 5.00 secs
+Total CPU time to Xst completion: 4.48 secs
+ 
+--> 
+
+Total memory usage is 256188 kilobytes
+
+Number of errors   :    0 (   0 filtered)
+Number of warnings :    3 (   0 filtered)
+Number of infos    :    0 (   0 filtered)
+

@@ -1,0 +1,6 @@
+lit ../test/test_unitaire_ok/test_seance_5/test_valide_04_entree.txt
+
+d 0 3 > >
+fin
+
+# Test de force de poussee 2 e VS 3 r

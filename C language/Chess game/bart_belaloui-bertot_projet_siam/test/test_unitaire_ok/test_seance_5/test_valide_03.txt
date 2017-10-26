@@ -1,0 +1,6 @@
+lit ../test/test_unitaire_ok/test_seance_5/test_valide_03_entree.txt
+
+d 0 2 > >
+fin
+
+# Test de poussee avec plusieurs animaux et rochers.

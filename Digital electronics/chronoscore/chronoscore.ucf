@@ -1,0 +1,71 @@
+#~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 
+#~~~~~         chronoscore          ~~~~~ 
+#~~~~~           XC3S200            ~~~~~ 
+#~~~~~     Start of Constraints     ~~~~~ 
+#~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 
+
+
+#~~~~~ Global Clocks ~~~~~~
+
+NET "GCLK" LOC = T9  | IOSTANDARD = LVCMOS33 ;                                # GCLK
+#| TNM_NET = "clock";
+#TIMESPEC "TS_clock"  = PERIOD "GCLK" 50 MHz HIGH 50 %;
+
+
+#~~~~~ Global Inputs ~~~~~~
+
+# ----- Switch -----
+NET "START"   LOC = F12 | IOSTANDARD = LVCMOS33;                                # SW0 - F12
+NET "WAIT_t"  LOC = G12 | IOSTANDARD = LVCMOS33;                                # SW1 - G12 
+#NET "SW2"    LOC = H14 | IOSTANDARD = LVCMOS33;                                # SW2 - H14
+#NET "SW3"    LOC = H13 | IOSTANDARD = LVCMOS33;                                # SW3 - H13
+#NET "SW4"    LOC = J14 | IOSTANDARD = LVCMOS33;                                # SW4 - J14
+#NET "SW5"    LOC = J13 | IOSTANDARD = LVCMOS33;                                # SW5 - J13
+#NET "SW5"    LOC = K14 | IOSTANDARD = LVCMOS33;                                # SW6 - K14
+NET "RESET"   LOC = K13 | IOSTANDARD = LVCMOS33;                                # SW7 - K13
+
+
+# ----- Push Button -----
+NET "BPOL"    LOC = M13 | IOSTANDARD = LVCMOS33;                                # BP0 - M13
+NET "BPV"     LOC = M14 | IOSTANDARD = LVCMOS33;                                # BP1 - M14
+#NET "BP2"    LOC = L13 | IOSTANDARD = LVCMOS33;                                # BP2 - L13
+NET "BPreset" LOC = L14 | IOSTANDARD = LVCMOS33;                                # BP3 - L14
+
+
+# ----- RS232 -----
+#NET "RX_IN"       LOC = T13 | IOSTANDARD = LVCMOS33;                           # RXD   (DB9)
+#NET "RX_IN"       LOC = N10 | IOSTANDARD = LVCMOS33;                           # RXD-A (J1 Header)
+
+#~~~~~ Global Outputs ~~~~~~
+
+# ----- 7 segments -----
+NET "AN<0>"   LOC = D14 | IOSTANDARD = LVCMOS33 | DRIVE = 24 | SLEW = FAST;     # Anode Control 0
+NET "AN<1>"   LOC = G14 | IOSTANDARD = LVCMOS33 | DRIVE = 24 | SLEW = FAST;     # Anode Control 1
+NET "AN<2>"   LOC = F14 | IOSTANDARD = LVCMOS33 | DRIVE = 24 | SLEW = FAST;     # Anode Control 2
+NET "AN<3>"   LOC = E13 | IOSTANDARD = LVCMOS33 | DRIVE = 24 | SLEW = FAST;     # Anode Control 3
+
+NET "LEDS<0>"   LOC = E14 | IOSTANDARD = LVCMOS33 | DRIVE = 24 | SLEW = FAST;   # a  Digit
+NET "LEDS<1>"   LOC = G13 | IOSTANDARD = LVCMOS33 | DRIVE = 24 | SLEW = FAST;   # b  Digit
+NET "LEDS<2>"   LOC = N15 | IOSTANDARD = LVCMOS33 | DRIVE = 24 | SLEW = FAST;   # c  Digit
+NET "LEDS<3>"   LOC = P15 | IOSTANDARD = LVCMOS33 | DRIVE = 24 | SLEW = FAST;   # d  Digit
+NET "LEDS<4>"   LOC = R16 | IOSTANDARD = LVCMOS33 | DRIVE = 24 | SLEW = FAST;   # e  Digit
+NET "LEDS<5>"   LOC = F13 | IOSTANDARD = LVCMOS33 | DRIVE = 24 | SLEW = FAST;   # f  Digit
+NET "LEDS<6>"   LOC = N16 | IOSTANDARD = LVCMOS33 | DRIVE = 24 | SLEW = FAST;   # g  Digit
+NET "LEDS<7>"   LOC = P16 | IOSTANDARD = LVCMOS33 | DRIVE = 24 | SLEW = FAST;   # dp Digit
+
+
+# ----- VGA -----
+#NET "RED"     LOC = R12 | IOSTANDARD = LVCMOS33 | DRIVE = 24 | SLEW = FAST;    # Red    (VGA)
+#NET "GREEN"   LOC = T12 | IOSTANDARD = LVCMOS33 | DRIVE = 24 | SLEW = FAST;    # Green  (VGA)
+#NET "BLUE"    LOC = R11 | IOSTANDARD = LVCMOS33 | DRIVE = 24 | SLEW = FAST;    # Blue   (VGA)
+#NET "HSYNCH"  LOC = R9  | IOSTANDARD = LVCMOS33 | DRIVE = 24 | SLEW = FAST;    # HSynch (VGA)
+#NET "VSYNCH"  LOC = T10 | IOSTANDARD = LVCMOS33 | DRIVE = 24 | SLEW = FAST;    # VSynch (VGA)
+
+# ----- RS232 -----
+#NET "TX_OUT"      LOC = R13 | IOSTANDARD = LVCMOS33 | DRIVE = 8 | SLEW = SLOW; # TXD   (DB9)
+#NET "TX_OUT"      LOC = T14 | IOSTANDARD = LVCMOS33 | DRIVE = 8 | SLEW = SLOW; # TXD-A (J1 Header)
+
+
+
+
+

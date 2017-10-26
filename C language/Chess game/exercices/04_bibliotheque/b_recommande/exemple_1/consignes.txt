@@ -1,0 +1,3 @@
+* Compilez le code situé dans executable.
+* Créez une bibliothèque statique à partir des fichiers de code_librairie.
+* Générez un executable en le liant à la bibliothèque statique.

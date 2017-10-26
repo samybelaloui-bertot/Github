@@ -1,0 +1,7 @@
+Utilisation du Makefile
+
+Le makefile de ce repertoire permet:
+* de générer la librairie dynamique à partie de vecteur.c
+* de générer un executable lié à cette librairie.
+
+Observez les différentes étapes réalisées. Lancez l'executable.

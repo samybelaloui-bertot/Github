@@ -1,0 +1,16 @@
+lit ../test/test_integration/test_seance_5/test_integration_02_entree.txt
+
+n 2 0 ^
+n 2 0 ^
+n 2 4 v
+d 2 4 > v
+n 2 0 ^
+n 0 4 v
+n 0 0 ^
+d 3 4 v v
+n 4 0 ^
+d 0 2 < <
+fin
+
+# Test de poussee et sortie de pieces
+

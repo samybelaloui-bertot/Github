@@ -1,0 +1,1 @@
+xst -intstyle ise -ifn "C:/Users/samyb/Documents/CPE/Electronique/Projet1/chronoscore/transcoder_2v4.xst" -ofn "C:/Users/samyb/Documents/CPE/Electronique/Projet1/chronoscore/transcoder_2v4.syr" 

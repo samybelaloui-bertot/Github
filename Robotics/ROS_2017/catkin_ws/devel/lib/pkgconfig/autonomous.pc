@@ -1,0 +1,8 @@
+prefix=/home/samy/catkin_ws/devel
+
+Name: autonomous
+Description: Description of autonomous
+Version: 0.0.0
+Cflags: 
+Libs: -L/home/samy/catkin_ws/devel/lib 
+Requires: 

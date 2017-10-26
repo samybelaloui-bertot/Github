@@ -1,0 +1,14 @@
+xst -intstyle ise -ifn "C:/CPE_users/TP_ELN2/Groupe D/BELALOUI-CHAVRET/Projet1/chronoscore/chronoscore.xst" -ofn "C:/CPE_users/TP_ELN2/Groupe D/BELALOUI-CHAVRET/Projet1/chronoscore/chronoscore.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc chronoscore.ucf -p xc3s200-ft256-4 "chronoscore.ngc" chronoscore.ngd  
+map -intstyle ise -p xc3s200-ft256-4 -cm area -ir off -pr off -c 100 -o chronoscore_map.ncd chronoscore.ngd chronoscore.pcf 
+par -w -intstyle ise -ol high -t 1 chronoscore_map.ncd chronoscore.ncd chronoscore.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml chronoscore.twx chronoscore.ncd -o chronoscore.twr chronoscore.pcf -ucf chronoscore.ucf 
+bitgen -intstyle ise -f chronoscore.ut chronoscore.ncd 
+xst -intstyle ise -ifn "C:/CPE_users/TP_ELN2/Groupe D/BELALOUI-CHAVRET/Projet1/chronoscore/chronoscore.xst" -ofn "C:/CPE_users/TP_ELN2/Groupe D/BELALOUI-CHAVRET/Projet1/chronoscore/chronoscore.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc chronoscore.ucf -p xc3s200-ft256-4 "chronoscore.ngc" chronoscore.ngd  
+map -intstyle ise -p xc3s200-ft256-4 -cm area -ir off -pr off -c 100 -o chronoscore_map.ncd chronoscore.ngd chronoscore.pcf 
+par -w -intstyle ise -ol high -t 1 chronoscore_map.ncd chronoscore.ncd chronoscore.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml chronoscore.twx chronoscore.ncd -o chronoscore.twr chronoscore.pcf -ucf chronoscore.ucf 
+bitgen -intstyle ise -f chronoscore.ut chronoscore.ncd 
+xst -intstyle ise -ifn "C:/Users/samyb/Documents/CPE/Electronique/Projet1/chronoscore/chronoscore.xst" -ofn "C:/Users/samyb/Documents/CPE/Electronique/Projet1/chronoscore/chronoscore.syr" 
+xst -intstyle ise -ifn "C:/Users/samyb/Documents/CPE/Electronique/Projet1/chronoscore/chronoscore.xst" -ofn "C:/Users/samyb/Documents/CPE/Electronique/Projet1/chronoscore/chronoscore.syr" 

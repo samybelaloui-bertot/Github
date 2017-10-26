@@ -1,0 +1,5 @@
+lit ../test/test_unitaire_ko/test_seance_5/test_invalide_01_entree.txt
+n 1 1 >
+fin
+
+# Test l'introduction d'une pièce non en bordure du plateau

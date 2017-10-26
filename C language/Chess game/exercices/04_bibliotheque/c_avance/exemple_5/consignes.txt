@@ -1,0 +1,7 @@
+Compilation de plusieurs librairies dans des repertoires differents.
+
+Ce Makefile réalise la compilation de 3 librairies distinctes. Chaque librairie est compilée dans son propre repertoire. 
+Notez l'utilisation de l'option -L lors de l'édition de liens pointant vers les repertoires des librairies.
+
+Lancez make, observez les differentes étapes, et executez le programme en prenant soin de mettre à jour votre variable LD_LIBRARY_PATH.
+

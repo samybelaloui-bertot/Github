@@ -1,0 +1,8 @@
+INTSTYLE=ise
+INFILE=C:\Users\samyb\Documents\CPE\Electronique\Projet1\chronoscore\transcoder_2v4.ncd
+OUTFILE=C:\Users\samyb\Documents\CPE\Electronique\Projet1\chronoscore\transcoder_2v4.bit
+FAMILY=Spartan3
+PART=xc3s200-4ft256
+WORKINGDIR=C:\Users\samyb\Documents\CPE\Electronique\Projet1\chronoscore
+LICENSE=WebPack
+USER_INFO=211159928_0_0_513

@@ -1,0 +1,6 @@
+lit ../test/test_unitaire_ko/test_seance_5/test_invalide_02_entree.txt
+
+n 2 2 v
+fin
+
+# Test l'introduction d'une piece sur un rocher.

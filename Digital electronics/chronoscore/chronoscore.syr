@@ -1,0 +1,787 @@
+Release 14.7 - xst P.20131013 (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+--> Parameter TMPDIR set to xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.35 secs
+ 
+--> Parameter xsthdpdir set to xst
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.35 secs
+ 
+--> Reading design: chronoscore.prj
+
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Compilation
+  3) Design Hierarchy Analysis
+  4) HDL Analysis
+  5) HDL Synthesis
+     5.1) HDL Synthesis Report
+  6) Advanced HDL Synthesis
+     6.1) Advanced HDL Synthesis Report
+  7) Low Level Synthesis
+  8) Partition Report
+  9) Final Report
+	9.1) Device utilization summary
+	9.2) Partition Resource Summary
+	9.3) TIMING REPORT
+
+
+=========================================================================
+*                      Synthesis Options Summary                        *
+=========================================================================
+---- Source Parameters
+Input File Name                    : "chronoscore.prj"
+Input Format                       : mixed
+Ignore Synthesis Constraint File   : NO
+
+---- Target Parameters
+Output File Name                   : "chronoscore"
+Output Format                      : NGC
+Target Device                      : xc3s200-4-ft256
+
+---- Source Options
+Top Module Name                    : chronoscore
+Automatic FSM Extraction           : YES
+FSM Encoding Algorithm             : Auto
+Safe Implementation                : No
+FSM Style                          : LUT
+RAM Extraction                     : Yes
+RAM Style                          : Auto
+ROM Extraction                     : Yes
+Mux Style                          : Auto
+Decoder Extraction                 : YES
+Priority Encoder Extraction        : Yes
+Shift Register Extraction          : YES
+Logical Shifter Extraction         : YES
+XOR Collapsing                     : YES
+ROM Style                          : Auto
+Mux Extraction                     : Yes
+Resource Sharing                   : YES
+Asynchronous To Synchronous        : NO
+Multiplier Style                   : Auto
+Automatic Register Balancing       : No
+
+---- Target Options
+Add IO Buffers                     : YES
+Global Maximum Fanout              : 500
+Add Generic Clock Buffer(BUFG)     : 8
+Register Duplication               : YES
+Slice Packing                      : YES
+Optimize Instantiated Primitives   : NO
+Use Clock Enable                   : Yes
+Use Synchronous Set                : Yes
+Use Synchronous Reset              : Yes
+Pack IO Registers into IOBs        : Auto
+Equivalent register Removal        : YES
+
+---- General Options
+Optimization Goal                  : Speed
+Optimization Effort                : 1
+Keep Hierarchy                     : No
+Netlist Hierarchy                  : As_Optimized
+RTL Output                         : Yes
+Global Optimization                : AllClockNets
+Read Cores                         : YES
+Write Timing Constraints           : NO
+Cross Clock Analysis               : NO
+Hierarchy Separator                : /
+Bus Delimiter                      : <>
+Case Specifier                     : Maintain
+Slice Utilization Ratio            : 100
+BRAM Utilization Ratio             : 100
+Verilog 2001                       : YES
+Auto BRAM Packing                  : NO
+Slice Utilization Ratio Delta      : 5
+
+=========================================================================
+
+
+=========================================================================
+*                          HDL Compilation                              *
+=========================================================================
+Compiling vhdl file "C:/Users/samyb/Documents/CPE/Electronique/Projet1/chronoscore/counter_2b_E.vhd" in Library work.
+Architecture behavioral of Entity counter_2b_e is up to date.
+Compiling vhdl file "C:/Users/samyb/Documents/CPE/Electronique/Projet1/chronoscore/transcoder_2v4.vhd" in Library work.
+Architecture behavioral of Entity transcoder_2v4 is up to date.
+Compiling vhdl file "C:/Users/samyb/Documents/CPE/Electronique/Projet1/chronoscore/register_4b.vhd" in Library work.
+Architecture behavioral of Entity register_4b is up to date.
+Compiling vhdl file "C:/Users/samyb/Documents/CPE/Electronique/Projet1/chronoscore/Tregister_1b.vhd" in Library work.
+Architecture behavioral of Entity tregister_1b is up to date.
+Compiling vhdl file "C:/Users/samyb/Documents/CPE/Electronique/Projet1/chronoscore/mux_4x1x1b.vhd" in Library work.
+Architecture behavioral of Entity mux_4x1x1b is up to date.
+Compiling vhdl file "C:/Users/samyb/Documents/CPE/Electronique/Projet1/chronoscore/mux_4x1x4b.vhd" in Library work.
+Architecture behavioral of Entity mux_4x1x4b is up to date.
+Compiling vhdl file "C:/Users/samyb/Documents/CPE/Electronique/Projet1/chronoscore/transcoder_7segs.vhd" in Library work.
+Architecture behavioral of Entity transcoder_7segs is up to date.
+Compiling vhdl file "C:/Users/samyb/Documents/CPE/Electronique/Projet1/chronoscore/register_8b.vhd" in Library work.
+Architecture behavioral of Entity register_8b is up to date.
+Compiling vhdl file "C:/Users/samyb/Documents/CPE/Electronique/Projet1/chronoscore/freqgen_4b_E.vhd" in Library work.
+Architecture behavioral of Entity freqgen_4b_e is up to date.
+Compiling vhdl file "C:/Users/samyb/Documents/CPE/Electronique/Projet1/chronoscore/mux_2x1x4b.vhd" in Library work.
+Architecture behavioral of Entity mux_2x1x4b is up to date.
+Compiling vhdl file "C:/Users/samyb/Documents/CPE/Electronique/Projet1/chronoscore/register_1b_E.vhd" in Library work.
+Architecture behavioral of Entity register_1b_e is up to date.
+Compiling vhdl file "C:/Users/samyb/Documents/CPE/Electronique/Projet1/chronoscore/register_1b.vhd" in Library work.
+Architecture behavioral of Entity register_1b is up to date.
+Compiling vhdl file "C:/Users/samyb/Documents/CPE/Electronique/Projet1/chronoscore/counterDec_4b_RE.vhd" in Library work.
+Architecture behavioral of Entity counterdec_4b_re is up to date.
+Compiling vhdl file "C:/Users/samyb/Documents/CPE/Electronique/Projet1/chronoscore/register_1b_R.vhd" in Library work.
+Architecture behavioral of Entity register_1b_r is up to date.
+Compiling vhdl file "C:/Users/samyb/Documents/CPE/Electronique/Projet1/chronoscore/counterSen_4b_RE.vhd" in Library work.
+Architecture behavioral of Entity countersen_4b_re is up to date.
+Compiling vhdl file "C:/Users/samyb/Documents/CPE/Electronique/Projet1/chronoscore/DLL.vhd" in Library work.
+Architecture behavioral of Entity dll is up to date.
+Compiling vhdl file "C:/Users/samyb/Documents/CPE/Electronique/Projet1/chronoscore/timer_1s.vhd" in Library work.
+Architecture behavioral of Entity timer_1s is up to date.
+Compiling vhdl file "C:/Users/samyb/Documents/CPE/Electronique/Projet1/chronoscore/timer_1ms.vhd" in Library work.
+Architecture behavioral of Entity timer_1ms is up to date.
+Compiling vhdl file "C:/Users/samyb/Documents/CPE/Electronique/Projet1/chronoscore/timeGenerator.vhd" in Library work.
+Architecture behavioral of Entity timegenerator is up to date.
+Compiling vhdl file "C:/Users/samyb/Documents/CPE/Electronique/Projet1/chronoscore/chronometer.vhd" in Library work.
+Architecture behavioral of Entity chronometer is up to date.
+Compiling vhdl file "C:/Users/samyb/Documents/CPE/Electronique/Projet1/chronoscore/score.vhd" in Library work.
+Architecture behavioral of Entity score is up to date.
+Compiling vhdl file "C:/Users/samyb/Documents/CPE/Electronique/Projet1/chronoscore/multiplexData.vhd" in Library work.
+Architecture behavioral of Entity multiplexdata is up to date.
+Compiling vhdl file "C:/Users/samyb/Documents/CPE/Electronique/Projet1/chronoscore/display.vhd" in Library work.
+Architecture behavioral of Entity display is up to date.
+Compiling vhdl file "C:/Users/samyb/Documents/CPE/Electronique/Projet1/chronoscore/chronoscore.vhd" in Library work.
+Architecture behavioral of Entity chronoscore is up to date.
+
+=========================================================================
+*                     Design Hierarchy Analysis                         *
+=========================================================================
+Analyzing hierarchy for entity <chronoscore> in library <work> (architecture <behavioral>).
+
+Analyzing hierarchy for entity <timeGenerator> in library <work> (architecture <behavioral>).
+
+Analyzing hierarchy for entity <chronometer> in library <work> (architecture <behavioral>).
+
+Analyzing hierarchy for entity <score> in library <work> (architecture <behavioral>).
+
+Analyzing hierarchy for entity <multiplexData> in library <work> (architecture <behavioral>).
+
+Analyzing hierarchy for entity <display> in library <work> (architecture <behavioral>).
+
+Analyzing hierarchy for entity <DLL> in library <work> (architecture <behavioral>).
+
+Analyzing hierarchy for entity <timer_1s> in library <work> (architecture <behavioral>).
+
+Analyzing hierarchy for entity <timer_1ms> in library <work> (architecture <behavioral>).
+
+Analyzing hierarchy for entity <register_1b_R> in library <work> (architecture <behavioral>).
+
+Analyzing hierarchy for entity <counterDec_4b_RE> in library <work> (architecture <behavioral>).
+
+Analyzing hierarchy for entity <counterSen_4b_RE> in library <work> (architecture <behavioral>).
+
+Analyzing hierarchy for entity <register_1b_E> in library <work> (architecture <behavioral>).
+
+Analyzing hierarchy for entity <register_1b> in library <work> (architecture <behavioral>).
+
+Analyzing hierarchy for entity <freqgen_4b_E> in library <work> (architecture <behavioral>).
+
+Analyzing hierarchy for entity <mux_2x1x4b> in library <work> (architecture <behavioral>).
+
+Analyzing hierarchy for entity <counter_2b_E> in library <work> (architecture <behavioral>).
+
+Analyzing hierarchy for entity <transcoder_2v4> in library <work> (architecture <behavioral>).
+
+Analyzing hierarchy for entity <register_4b> in library <work> (architecture <behavioral>).
+
+Analyzing hierarchy for entity <Tregister_1b> in library <work> (architecture <behavioral>).
+
+Analyzing hierarchy for entity <mux_4x1x1b> in library <work> (architecture <behavioral>).
+
+Analyzing hierarchy for entity <mux_4x1x4b> in library <work> (architecture <behavioral>).
+
+Analyzing hierarchy for entity <transcoder_7segs> in library <work> (architecture <behavioral>).
+
+Analyzing hierarchy for entity <register_8b> in library <work> (architecture <behavioral>).
+
+
+=========================================================================
+*                            HDL Analysis                               *
+=========================================================================
+Analyzing Entity <chronoscore> in library <work> (Architecture <behavioral>).
+Entity <chronoscore> analyzed. Unit <chronoscore> generated.
+
+Analyzing Entity <timeGenerator> in library <work> (Architecture <behavioral>).
+Entity <timeGenerator> analyzed. Unit <timeGenerator> generated.
+
+Analyzing Entity <DLL> in library <work> (Architecture <behavioral>).
+    Set user-defined property "CAPACITANCE =  DONT_CARE" for instance <IBUFG_inst> in unit <DLL>.
+    Set user-defined property "IBUF_DELAY_VALUE =  0" for instance <IBUFG_inst> in unit <DLL>.
+    Set user-defined property "IBUF_LOW_PWR =  TRUE" for instance <IBUFG_inst> in unit <DLL>.
+    Set user-defined property "IOSTANDARD =  DEFAULT" for instance <IBUFG_inst> in unit <DLL>.
+    Set user-defined property "CLKDV_DIVIDE =  2.0000000000000000" for instance <DCM_inst> in unit <DLL>.
+    Set user-defined property "CLKFX_DIVIDE =  1" for instance <DCM_inst> in unit <DLL>.
+    Set user-defined property "CLKFX_MULTIPLY =  4" for instance <DCM_inst> in unit <DLL>.
+    Set user-defined property "CLKIN_DIVIDE_BY_2 =  FALSE" for instance <DCM_inst> in unit <DLL>.
+    Set user-defined property "CLKIN_PERIOD =  20.0000000000000000" for instance <DCM_inst> in unit <DLL>.
+    Set user-defined property "CLKOUT_PHASE_SHIFT =  NONE" for instance <DCM_inst> in unit <DLL>.
+    Set user-defined property "CLK_FEEDBACK =  1X" for instance <DCM_inst> in unit <DLL>.
+    Set user-defined property "DESKEW_ADJUST =  SYSTEM_SYNCHRONOUS" for instance <DCM_inst> in unit <DLL>.
+    Set user-defined property "DFS_FREQUENCY_MODE =  LOW" for instance <DCM_inst> in unit <DLL>.
+    Set user-defined property "DLL_FREQUENCY_MODE =  LOW" for instance <DCM_inst> in unit <DLL>.
+    Set user-defined property "DSS_MODE =  NONE" for instance <DCM_inst> in unit <DLL>.
+    Set user-defined property "DUTY_CYCLE_CORRECTION =  TRUE" for instance <DCM_inst> in unit <DLL>.
+    Set user-defined property "FACTORY_JF =  C080" for instance <DCM_inst> in unit <DLL>.
+    Set user-defined property "PHASE_SHIFT =  0" for instance <DCM_inst> in unit <DLL>.
+    Set user-defined property "SIM_MODE =  SAFE" for instance <DCM_inst> in unit <DLL>.
+    Set user-defined property "STARTUP_WAIT =  FALSE" for instance <DCM_inst> in unit <DLL>.
+Entity <DLL> analyzed. Unit <DLL> generated.
+
+Analyzing Entity <timer_1s> in library <work> (Architecture <behavioral>).
+Entity <timer_1s> analyzed. Unit <timer_1s> generated.
+
+Analyzing Entity <timer_1ms> in library <work> (Architecture <behavioral>).
+Entity <timer_1ms> analyzed. Unit <timer_1ms> generated.
+
+Analyzing Entity <chronometer> in library <work> (Architecture <behavioral>).
+WARNING:Xst:753 - "C:/Users/samyb/Documents/CPE/Electronique/Projet1/chronoscore/chronometer.vhd" line 135: Unconnected output port 'TC' of component 'counterSen_4b_RE'.
+Entity <chronometer> analyzed. Unit <chronometer> generated.
+
+Analyzing Entity <register_1b_R> in library <work> (Architecture <behavioral>).
+Entity <register_1b_R> analyzed. Unit <register_1b_R> generated.
+
+Analyzing Entity <counterDec_4b_RE> in library <work> (Architecture <behavioral>).
+WARNING:Xst:819 - "C:/Users/samyb/Documents/CPE/Electronique/Projet1/chronoscore/counterDec_4b_RE.vhd" line 49: One or more signals are missing in the process sensitivity list. To enable synthesis of FPGA/CPLD hardware, XST will assume that all necessary signals are present in the sensitivity list. Please note that the result of the synthesis may differ from the initial design specification. The missing signals are:
+   <Q_int>
+Entity <counterDec_4b_RE> analyzed. Unit <counterDec_4b_RE> generated.
+
+Analyzing Entity <counterSen_4b_RE> in library <work> (Architecture <behavioral>).
+WARNING:Xst:819 - "C:/Users/samyb/Documents/CPE/Electronique/Projet1/chronoscore/counterSen_4b_RE.vhd" line 49: One or more signals are missing in the process sensitivity list. To enable synthesis of FPGA/CPLD hardware, XST will assume that all necessary signals are present in the sensitivity list. Please note that the result of the synthesis may differ from the initial design specification. The missing signals are:
+   <Q_int>
+Entity <counterSen_4b_RE> analyzed. Unit <counterSen_4b_RE> generated.
+
+Analyzing Entity <score> in library <work> (Architecture <behavioral>).
+WARNING:Xst:753 - "C:/Users/samyb/Documents/CPE/Electronique/Projet1/chronoscore/score.vhd" line 149: Unconnected output port 'TC' of component 'counterDec_4b_RE'.
+WARNING:Xst:753 - "C:/Users/samyb/Documents/CPE/Electronique/Projet1/chronoscore/score.vhd" line 165: Unconnected output port 'TC' of component 'counterDec_4b_RE'.
+Entity <score> analyzed. Unit <score> generated.
+
+Analyzing Entity <register_1b_E> in library <work> (Architecture <behavioral>).
+Entity <register_1b_E> analyzed. Unit <register_1b_E> generated.
+
+Analyzing Entity <register_1b> in library <work> (Architecture <behavioral>).
+Entity <register_1b> analyzed. Unit <register_1b> generated.
+
+Analyzing Entity <multiplexData> in library <work> (Architecture <behavioral>).
+Entity <multiplexData> analyzed. Unit <multiplexData> generated.
+
+Analyzing Entity <freqgen_4b_E> in library <work> (Architecture <behavioral>).
+Entity <freqgen_4b_E> analyzed. Unit <freqgen_4b_E> generated.
+
+Analyzing Entity <mux_2x1x4b> in library <work> (Architecture <behavioral>).
+Entity <mux_2x1x4b> analyzed. Unit <mux_2x1x4b> generated.
+
+Analyzing Entity <display> in library <work> (Architecture <behavioral>).
+Entity <display> analyzed. Unit <display> generated.
+
+Analyzing Entity <counter_2b_E> in library <work> (Architecture <behavioral>).
+Entity <counter_2b_E> analyzed. Unit <counter_2b_E> generated.
+
+Analyzing Entity <transcoder_2v4> in library <work> (Architecture <behavioral>).
+Entity <transcoder_2v4> analyzed. Unit <transcoder_2v4> generated.
+
+Analyzing Entity <register_4b> in library <work> (Architecture <behavioral>).
+Entity <register_4b> analyzed. Unit <register_4b> generated.
+
+Analyzing Entity <Tregister_1b> in library <work> (Architecture <behavioral>).
+Entity <Tregister_1b> analyzed. Unit <Tregister_1b> generated.
+
+Analyzing Entity <mux_4x1x1b> in library <work> (Architecture <behavioral>).
+Entity <mux_4x1x1b> analyzed. Unit <mux_4x1x1b> generated.
+
+Analyzing Entity <mux_4x1x4b> in library <work> (Architecture <behavioral>).
+Entity <mux_4x1x4b> analyzed. Unit <mux_4x1x4b> generated.
+
+Analyzing Entity <transcoder_7segs> in library <work> (Architecture <behavioral>).
+Entity <transcoder_7segs> analyzed. Unit <transcoder_7segs> generated.
+
+Analyzing Entity <register_8b> in library <work> (Architecture <behavioral>).
+Entity <register_8b> analyzed. Unit <register_8b> generated.
+
+
+=========================================================================
+*                           HDL Synthesis                               *
+=========================================================================
+
+Performing bidirectional port resolution...
+
+Synthesizing Unit <timer_1s>.
+    Related source file is "C:/Users/samyb/Documents/CPE/Electronique/Projet1/chronoscore/timer_1s.vhd".
+    Found 1-bit register for signal <T_out>.
+    Found 26-bit up counter for signal <vcount>.
+    Summary:
+	inferred   1 Counter(s).
+	inferred   1 D-type flip-flop(s).
+Unit <timer_1s> synthesized.
+
+
+Synthesizing Unit <timer_1ms>.
+    Related source file is "C:/Users/samyb/Documents/CPE/Electronique/Projet1/chronoscore/timer_1ms.vhd".
+    Found 1-bit register for signal <T_out>.
+    Found 16-bit up counter for signal <vcount>.
+    Summary:
+	inferred   1 Counter(s).
+	inferred   1 D-type flip-flop(s).
+Unit <timer_1ms> synthesized.
+
+
+Synthesizing Unit <register_1b_R>.
+    Related source file is "C:/Users/samyb/Documents/CPE/Electronique/Projet1/chronoscore/register_1b_R.vhd".
+    Found 1-bit register for signal <Q_int>.
+    Summary:
+	inferred   1 D-type flip-flop(s).
+Unit <register_1b_R> synthesized.
+
+
+Synthesizing Unit <counterDec_4b_RE>.
+    Related source file is "C:/Users/samyb/Documents/CPE/Electronique/Projet1/chronoscore/counterDec_4b_RE.vhd".
+    Found 4-bit up counter for signal <Q_int>.
+    Summary:
+	inferred   1 Counter(s).
+Unit <counterDec_4b_RE> synthesized.
+
+
+Synthesizing Unit <counterSen_4b_RE>.
+    Related source file is "C:/Users/samyb/Documents/CPE/Electronique/Projet1/chronoscore/counterSen_4b_RE.vhd".
+    Found 4-bit up counter for signal <Q_int>.
+    Summary:
+	inferred   1 Counter(s).
+Unit <counterSen_4b_RE> synthesized.
+
+
+Synthesizing Unit <register_1b_E>.
+    Related source file is "C:/Users/samyb/Documents/CPE/Electronique/Projet1/chronoscore/register_1b_E.vhd".
+    Found 1-bit register for signal <Q_int>.
+    Summary:
+	inferred   1 D-type flip-flop(s).
+Unit <register_1b_E> synthesized.
+
+
+Synthesizing Unit <register_1b>.
+    Related source file is "C:/Users/samyb/Documents/CPE/Electronique/Projet1/chronoscore/register_1b.vhd".
+    Found 1-bit register for signal <Q_int>.
+    Summary:
+	inferred   1 D-type flip-flop(s).
+Unit <register_1b> synthesized.
+
+
+Synthesizing Unit <freqgen_4b_E>.
+    Related source file is "C:/Users/samyb/Documents/CPE/Electronique/Projet1/chronoscore/freqgen_4b_E.vhd".
+    Found 1-bit register for signal <clk_5sint>.
+    Found 4-bit up counter for signal <Qint>.
+    Summary:
+	inferred   1 Counter(s).
+	inferred   1 D-type flip-flop(s).
+Unit <freqgen_4b_E> synthesized.
+
+
+Synthesizing Unit <mux_2x1x4b>.
+    Related source file is "C:/Users/samyb/Documents/CPE/Electronique/Projet1/chronoscore/mux_2x1x4b.vhd".
+Unit <mux_2x1x4b> synthesized.
+
+
+Synthesizing Unit <counter_2b_E>.
+    Related source file is "C:/Users/samyb/Documents/CPE/Electronique/Projet1/chronoscore/counter_2b_E.vhd".
+    Found 2-bit up counter for signal <Q_interne>.
+    Summary:
+	inferred   1 Counter(s).
+Unit <counter_2b_E> synthesized.
+
+
+Synthesizing Unit <transcoder_2v4>.
+    Related source file is "C:/Users/samyb/Documents/CPE/Electronique/Projet1/chronoscore/transcoder_2v4.vhd".
+    Found 1-of-4 decoder for signal <O>.
+    Summary:
+	inferred   1 Decoder(s).
+Unit <transcoder_2v4> synthesized.
+
+
+Synthesizing Unit <register_4b>.
+    Related source file is "C:/Users/samyb/Documents/CPE/Electronique/Projet1/chronoscore/register_4b.vhd".
+    Found 4-bit register for signal <Q_decalage>.
+    Summary:
+	inferred   4 D-type flip-flop(s).
+Unit <register_4b> synthesized.
+
+
+Synthesizing Unit <Tregister_1b>.
+    Related source file is "C:/Users/samyb/Documents/CPE/Electronique/Projet1/chronoscore/Tregister_1b.vhd".
+    Found 1-bit register for signal <Q_interne>.
+    Summary:
+	inferred   1 D-type flip-flop(s).
+Unit <Tregister_1b> synthesized.
+
+
+Synthesizing Unit <mux_4x1x1b>.
+    Related source file is "C:/Users/samyb/Documents/CPE/Electronique/Projet1/chronoscore/mux_4x1x1b.vhd".
+Unit <mux_4x1x1b> synthesized.
+
+
+Synthesizing Unit <mux_4x1x4b>.
+    Related source file is "C:/Users/samyb/Documents/CPE/Electronique/Projet1/chronoscore/mux_4x1x4b.vhd".
+    Found 4-bit 4-to-1 multiplexer for signal <O>.
+    Summary:
+	inferred   4 Multiplexer(s).
+Unit <mux_4x1x4b> synthesized.
+
+
+Synthesizing Unit <transcoder_7segs>.
+    Related source file is "C:/Users/samyb/Documents/CPE/Electronique/Projet1/chronoscore/transcoder_7segs.vhd".
+    Found 16x7-bit ROM for signal <O>.
+    Summary:
+	inferred   1 ROM(s).
+Unit <transcoder_7segs> synthesized.
+
+
+Synthesizing Unit <register_8b>.
+    Related source file is "C:/Users/samyb/Documents/CPE/Electronique/Projet1/chronoscore/register_8b.vhd".
+    Found 8-bit register for signal <Q_decalage>.
+    Summary:
+	inferred   8 D-type flip-flop(s).
+Unit <register_8b> synthesized.
+
+
+Synthesizing Unit <chronometer>.
+    Related source file is "C:/Users/samyb/Documents/CPE/Electronique/Projet1/chronoscore/chronometer.vhd".
+Unit <chronometer> synthesized.
+
+
+Synthesizing Unit <score>.
+    Related source file is "C:/Users/samyb/Documents/CPE/Electronique/Projet1/chronoscore/score.vhd".
+    Found 1-bit xor2 for signal <bpol_fr>.
+    Found 1-bit xor2 for signal <bpv_fr>.
+Unit <score> synthesized.
+
+
+Synthesizing Unit <multiplexData>.
+    Related source file is "C:/Users/samyb/Documents/CPE/Electronique/Projet1/chronoscore/multiplexData.vhd".
+Unit <multiplexData> synthesized.
+
+
+Synthesizing Unit <display>.
+    Related source file is "C:/Users/samyb/Documents/CPE/Electronique/Projet1/chronoscore/display.vhd".
+WARNING:Xst:646 - Signal <T1s> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+Unit <display> synthesized.
+
+
+Synthesizing Unit <DLL>.
+    Related source file is "C:/Users/samyb/Documents/CPE/Electronique/Projet1/chronoscore/DLL.vhd".
+Unit <DLL> synthesized.
+
+
+Synthesizing Unit <timeGenerator>.
+    Related source file is "C:/Users/samyb/Documents/CPE/Electronique/Projet1/chronoscore/timeGenerator.vhd".
+Unit <timeGenerator> synthesized.
+
+
+Synthesizing Unit <chronoscore>.
+    Related source file is "C:/Users/samyb/Documents/CPE/Electronique/Projet1/chronoscore/chronoscore.vhd".
+Unit <chronoscore> synthesized.
+
+WARNING:Xst:524 - All outputs of the instance <U3_Tregister_1b> of the block <Tregister_1b> are unconnected in block <display>.
+   This instance will be removed from the design along with all underlying logic
+
+=========================================================================
+HDL Synthesis Report
+
+Macro Statistics
+# ROMs                                                 : 1
+ 16x7-bit ROM                                          : 1
+# Counters                                             : 12
+ 16-bit up counter                                     : 1
+ 2-bit up counter                                      : 1
+ 26-bit up counter                                     : 1
+ 4-bit up counter                                      : 9
+# Registers                                            : 12
+ 1-bit register                                        : 10
+ 4-bit register                                        : 1
+ 8-bit register                                        : 1
+# Multiplexers                                         : 1
+ 4-bit 4-to-1 multiplexer                              : 1
+# Decoders                                             : 1
+ 1-of-4 decoder                                        : 1
+# Xors                                                 : 2
+ 1-bit xor2                                            : 2
+
+=========================================================================
+
+=========================================================================
+*                       Advanced HDL Synthesis                          *
+=========================================================================
+
+WARNING:Xst:1426 - The value init of the FF/Latch Q_decalage_7 hinder the constant cleaning in the block U7_register_8b.
+   You should achieve better results by setting this init to 1.
+
+=========================================================================
+Advanced HDL Synthesis Report
+
+Macro Statistics
+# ROMs                                                 : 1
+ 16x7-bit ROM                                          : 1
+# Counters                                             : 12
+ 16-bit up counter                                     : 1
+ 2-bit up counter                                      : 1
+ 26-bit up counter                                     : 1
+ 4-bit up counter                                      : 9
+# Registers                                            : 22
+ Flip-Flops                                            : 22
+# Multiplexers                                         : 1
+ 4-bit 4-to-1 multiplexer                              : 1
+# Decoders                                             : 1
+ 1-of-4 decoder                                        : 1
+# Xors                                                 : 2
+ 1-bit xor2                                            : 2
+
+=========================================================================
+
+=========================================================================
+*                         Low Level Synthesis                           *
+=========================================================================
+WARNING:Xst:1426 - The value init of the FF/Latch Q_decalage_7 hinder the constant cleaning in the block register_8b.
+   You should achieve better results by setting this init to 1.
+
+Optimizing unit <chronoscore> ...
+
+Optimizing unit <freqgen_4b_E> ...
+
+Optimizing unit <register_8b> ...
+
+Optimizing unit <chronometer> ...
+
+Optimizing unit <score> ...
+
+Mapping all equations...
+Building and optimizing final netlist ...
+Found area constraint ratio of 100 (+ 5) on block chronoscore, actual ratio is 4.
+
+Final Macro Processing ...
+
+Processing Unit <chronoscore> :
+	Found 2-bit shift register for signal <U2_score/U1_register_1b_E/Q_int>.
+	Found 2-bit shift register for signal <U2_score/U6_register_1b_E/Q_int>.
+Unit <chronoscore> processed.
+
+=========================================================================
+Final Register Report
+
+Macro Statistics
+# Registers                                            : 98
+ Flip-Flops                                            : 98
+# Shift Registers                                      : 2
+ 2-bit shift register                                  : 2
+
+=========================================================================
+
+=========================================================================
+*                           Partition Report                            *
+=========================================================================
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+=========================================================================
+*                            Final Report                               *
+=========================================================================
+Final Results
+RTL Top Level Output File Name     : chronoscore.ngr
+Top Level Output File Name         : chronoscore
+Output Format                      : NGC
+Optimization Goal                  : Speed
+Keep Hierarchy                     : No
+
+Design Statistics
+# IOs                              : 19
+
+Cell Usage :
+# BELS                             : 243
+#      GND                         : 1
+#      INV                         : 14
+#      LUT1                        : 40
+#      LUT2                        : 8
+#      LUT2_D                      : 1
+#      LUT2_L                      : 1
+#      LUT3                        : 34
+#      LUT3_L                      : 2
+#      LUT4                        : 45
+#      LUT4_D                      : 2
+#      LUT4_L                      : 1
+#      MUXCY                       : 47
+#      MUXF5                       : 4
+#      VCC                         : 1
+#      XORCY                       : 42
+# FlipFlops/Latches                : 100
+#      FD                          : 11
+#      FDCE                        : 32
+#      FDE                         : 5
+#      FDR                         : 44
+#      FDRE                        : 4
+#      FDRS                        : 1
+#      FDS                         : 3
+# Shift Registers                  : 2
+#      SRL16E                      : 2
+# Clock Buffers                    : 1
+#      BUFG                        : 1
+# IO Buffers                       : 19
+#      IBUF                        : 6
+#      IBUFG                       : 1
+#      OBUF                        : 12
+# DCMs                             : 1
+#      DCM                         : 1
+=========================================================================
+
+Device utilization summary:
+---------------------------
+
+Selected Device : 3s200ft256-4 
+
+ Number of Slices:                       74  out of   1920     3%  
+ Number of Slice Flip Flops:             99  out of   3840     2%  
+ Number of 4 input LUTs:                150  out of   3840     3%  
+    Number used as logic:               148
+    Number used as Shift registers:       2
+ Number of IOs:                          19
+ Number of bonded IOBs:                  19  out of    173    10%  
+    IOB Flip Flops:                       1
+ Number of GCLKs:                         1  out of      8    12%  
+ Number of DCMs:                          1  out of      4    25%  
+
+---------------------------
+Partition Resource Summary:
+---------------------------
+
+  No Partitions were found in this design.
+
+---------------------------
+
+
+=========================================================================
+TIMING REPORT
+
+NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
+      FOR ACCURATE TIMING INFORMATION PLEASE REFER TO THE TRACE REPORT
+      GENERATED AFTER PLACE-and-ROUTE.
+
+Clock Information:
+------------------
+-----------------------------------+----------------------------------+-------+
+Clock Signal                       | Clock buffer(FF name)            | Load  |
+-----------------------------------+----------------------------------+-------+
+GCLK                               | U0_timeGenerator/U0/DCM_inst:CLK0| 102   |
+-----------------------------------+----------------------------------+-------+
+
+Asynchronous Control Signals Information:
+----------------------------------------
+-----------------------------------+------------------------+-------+
+Control Signal                     | Buffer(FF name)        | Load  |
+-----------------------------------+------------------------+-------+
+BPreset                            | IBUF                   | 16    |
+RESET                              | IBUF                   | 16    |
+-----------------------------------+------------------------+-------+
+
+Timing Summary:
+---------------
+Speed Grade: -4
+
+   Minimum period: 8.693ns (Maximum Frequency: 115.035MHz)
+   Minimum input arrival time before clock: 8.800ns
+   Maximum output required time after clock: 7.165ns
+   Maximum combinational path delay: No path found
+
+Timing Detail:
+--------------
+All values displayed in nanoseconds (ns)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'GCLK'
+  Clock period: 8.693ns (frequency: 115.035MHz)
+  Total number of paths / destination ports: 2362 / 191
+-------------------------------------------------------------------------
+Delay:               8.693ns (Levels of Logic = 4)
+  Source:            U0_timeGenerator/U1/T_out (FF)
+  Destination:       U1_chronometer/U6_counterSen_4b_RE/Q_int_3 (FF)
+  Source Clock:      GCLK rising
+  Destination Clock: GCLK rising
+
+  Data Path: U0_timeGenerator/U1/T_out to U1_chronometer/U6_counterSen_4b_RE/Q_int_3
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDR:C->Q              7   0.720   1.134  U0_timeGenerator/U1/T_out (U0_timeGenerator/U1/T_out)
+     LUT3:I2->O            1   0.551   1.140  U1_chronometer/CE_time45min31 (U1_chronometer/CE_time45min31)
+     LUT3:I0->O            5   0.551   0.947  U1_chronometer/CE_time45min33 (U1_chronometer/CE_time45min)
+     LUT4:I3->O            6   0.551   1.029  U1_chronometer/U3_counterDec_4b_RE/TC_int_and0000 (U1_chronometer/CE_secDec)
+     LUT4:I3->O            4   0.551   0.917  U1_chronometer/U4_counterSen_4b_RE/TC_int_and0000 (U1_chronometer/CE_minUni)
+     FDCE:CE                   0.602          U1_chronometer/U5_counterDec_4b_RE/Q_int_0
+    ----------------------------------------
+    Total                      8.693ns (3.526ns logic, 5.167ns route)
+                                       (40.6% logic, 59.4% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'GCLK'
+  Total number of paths / destination ports: 20 / 20
+-------------------------------------------------------------------------
+Offset:              8.800ns (Levels of Logic = 5)
+  Source:            WAIT_t (PAD)
+  Destination:       U1_chronometer/U6_counterSen_4b_RE/Q_int_3 (FF)
+  Destination Clock: GCLK rising
+
+  Data Path: WAIT_t to U1_chronometer/U6_counterSen_4b_RE/Q_int_3
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O             1   0.821   1.140  WAIT_t_IBUF (WAIT_t_IBUF)
+     LUT3:I0->O            1   0.551   1.140  U1_chronometer/CE_time45min31 (U1_chronometer/CE_time45min31)
+     LUT3:I0->O            5   0.551   0.947  U1_chronometer/CE_time45min33 (U1_chronometer/CE_time45min)
+     LUT4:I3->O            6   0.551   1.029  U1_chronometer/U3_counterDec_4b_RE/TC_int_and0000 (U1_chronometer/CE_secDec)
+     LUT4:I3->O            4   0.551   0.917  U1_chronometer/U4_counterSen_4b_RE/TC_int_and0000 (U1_chronometer/CE_minUni)
+     FDCE:CE                   0.602          U1_chronometer/U5_counterDec_4b_RE/Q_int_0
+    ----------------------------------------
+    Total                      8.800ns (3.627ns logic, 5.173ns route)
+                                       (41.2% logic, 58.8% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'GCLK'
+  Total number of paths / destination ports: 12 / 12
+-------------------------------------------------------------------------
+Offset:              7.165ns (Levels of Logic = 1)
+  Source:            U4_display/U2_register_4b/Q_decalage_3 (FF)
+  Destination:       AN<3> (PAD)
+  Source Clock:      GCLK rising
+
+  Data Path: U4_display/U2_register_4b/Q_decalage_3 to AN<3>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FD:C->Q               1   0.720   0.801  U4_display/U2_register_4b/Q_decalage_3 (U4_display/U2_register_4b/Q_decalage_3)
+     OBUF:I->O                 5.644          AN_3_OBUF (AN<3>)
+    ----------------------------------------
+    Total                      7.165ns (6.364ns logic, 0.801ns route)
+                                       (88.8% logic, 11.2% route)
+
+=========================================================================
+
+
+Total REAL time to Xst completion: 17.00 secs
+Total CPU time to Xst completion: 17.68 secs
+ 
+--> 
+
+Total memory usage is 310784 kilobytes
+
+Number of errors   :    0 (   0 filtered)
+Number of warnings :    9 (   0 filtered)
+Number of infos    :    0 (   0 filtered)
+

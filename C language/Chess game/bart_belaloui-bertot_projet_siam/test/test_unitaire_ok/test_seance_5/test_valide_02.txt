@@ -1,0 +1,6 @@
+lit ../test/test_unitaire_ok/test_seance_5/test_valide_02_entree.txt
+
+n 3 4 v
+fin
+
+# Test introduction avec poussee

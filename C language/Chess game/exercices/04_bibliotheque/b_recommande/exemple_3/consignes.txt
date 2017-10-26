@@ -1,0 +1,22 @@
+Librairie statique:
+
+* Allez dans le repertoire code_librairie/
+
+* Creez le fichier objet:
+$ gcc -c vecteur.c -fPIC -Wall -Wextra
+
+* Creez la librairie statique avec cette syntaxe:
+$ ar -rv libvecteur.a vecteur.o
+(ar est un archiveur, il archive un ensemble de .o dans le fichier .a, l'option r indique l'insertion de nouveaux fichiers, v indique que le resultat est affiché à l'écran)
+
+* Deplacez votre librairie statique dans le repertoire executables/ et générez les programmes executables de manière identique au cas d'une librairie dynamique.
+
+* Executez votre programme. Que constatez vous? Aves vous-besoin de spécifier l'emplacement de la librairie?
+
+* Lancez
+$ ldd mon_programme_1
+Voyez vous la librairie statique?
+
+* Supprimez le fichier .a du repertoire executable/, et relancez votre programme.
+
+* Concluez sur le rôle d'une librairie statique.
